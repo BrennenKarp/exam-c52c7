@@ -15,8 +15,8 @@ bikes = [
 ]
 
 total_price = 0
-total_price += bikes[0].weekly_rate
-total_price += bikes[0].tail_pack.cost
+total_price += bikes[0].get_weekly_rate
+total_price += bikes[0].get_tail_pack.cost
 total_price += bikes[1].daily_rate * 7
 total_price += bikes[1].panniers[0].get_price
 total_price += bikes[1].panniers[1].get_price
